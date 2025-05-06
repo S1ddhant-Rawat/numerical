@@ -1,5 +1,5 @@
 def f(x):
-    return x**3 - x - 2  # Example function
+    return x**3 - x - 2  
 
 def secant(x0, x1, tol=1e-4, max_iter=100):
     for i in range(max_iter):
