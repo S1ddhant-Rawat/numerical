@@ -8,7 +8,6 @@ def jacobi(a, b, x_init, max_iter=25, tol=1e-4):
             sum_ = sum(a[i][j] * x[j] for j in range(n) if j != i)
             x_new[i] = (b[i] - sum_) / a[i][i]
 
-        # Check for convergence
         if all(abs(x_new[i] - x[i]) < tol for i in range(n)):
             print(f"Converged in {itr+1} iterations.")
             break
@@ -17,7 +16,6 @@ def jacobi(a, b, x_init, max_iter=25, tol=1e-4):
 
     return x_new
 
-# Example system
 A = [
     [10, 2, 1],
     [1, 5, 1],
