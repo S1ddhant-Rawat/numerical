@@ -1,8 +1,8 @@
 def f(x):
-    return x**3 - x - 2  # Example: f(x) = x³ - x - 2
+    return x**3 - x - 2  
 
 def df(x):
-    return 3*x**2 - 1    # Derivative: f'(x) = 3x² - 1
+    return 3*x**2 - 1    
 
 def newton_raphson(x0, tol=1e-4, max_iter=25):
     for i in range(max_iter):
