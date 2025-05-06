@@ -1,5 +1,5 @@
 def f(x):
-    return x**3 - x - 2  # Example function
+    return x**3 - x - 2  
 
 def bisection(a, b, tol=0.0001):
     if f(a) * f(b) > 0:
@@ -17,5 +17,4 @@ def bisection(a, b, tol=0.0001):
 
     print(f"Root = {c:.4f}")
 
-# Example use
 bisection(1, 2)
