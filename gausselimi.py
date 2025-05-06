@@ -1,9 +1,7 @@
 def gauss_elimination(a):
     n = len(a)
 
-    # Forward Elimination
     for i in range(n):
-        # Make the diagonal element 1
         if a[i][i] == 0:
             raise ValueError("Zero pivot encountered!")
 
@@ -12,7 +10,6 @@ def gauss_elimination(a):
             for k in range(n+1):
                 a[j][k] -= ratio * a[i][k]
 
-    # Back Substitution
     x = [0 for _ in range(n)]
     for i in range(n-1, -1, -1):
         x[i] = a[i][n]
