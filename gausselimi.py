@@ -20,7 +20,6 @@ def gauss_elimination(a):
     return x
 
 
-# Example input
 aug_matrix = [
     [2, 3, 1, 1],
     [4, 1, -2, -2],
